@@ -8,5 +8,6 @@ const config = {
    (process.env.MONGO_PORT || '27017') +
     '/GroupProject' 
     }
-    export default config
+    // export default config
+    module.exports=config;
 

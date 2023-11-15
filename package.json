@@ -2,7 +2,7 @@
  "name": "mern_skeleton",
  "version": "1.0.0",
  "main": "index.js",
- "type": "module",
+ "type": "commonjs",
  "author": "Blessing",
  "license": "MIT",
  "devDependencies": {
@@ -30,6 +30,5 @@
   "lodash": "^4.17.21",
   "mongoose": "^7.6.1",
   "vite": "^4.4.11"
-  
  }
 }

@@ -6,7 +6,16 @@ import errorHandler from './error.controller.js'
 
 
 //list all users
-
+const list= async (req, res) => {
+    try {
+      const users = await User.find();
+      res.json(users);
+    } catch (err) {
+        return res.status(400).json({
+            error: errorHandler.getErrorMessage(err) 
+        })
+    }
+};
 
 //list user by id
 
@@ -31,5 +40,5 @@ error: errorHandler.getErrorMessage(err)
 })
 } 
 }
-
-export default { create, userByID, read, list, remove, update }
+export default {list,remove}
+// export default { create, userByID, read, list, remove, update }
