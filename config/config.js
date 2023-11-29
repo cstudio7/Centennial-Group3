@@ -1,4 +1,8 @@
-const config = {
+import { config } from 'dotenv';
+
+config()
+
+const configs = {
     env: process.env.NODE_ENV || 'development', 
     port: process.env.PORT || 3000,
     jwtSecret: process.env.JWT_SECRET || "YOUR_secret_key", 
@@ -8,7 +12,7 @@ const config = {
    (process.env.MONGO_PORT || '27017') +
     '/assignment2' 
     }
-    export default config
+    export default configs
 
 /*
 //offline local config

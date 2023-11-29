@@ -1,8 +1,13 @@
+import { config } from 'dotenv';
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = process.env.PORT;
 const helmet = require('helmet');
 const cors = require('cors');
+
+
+// This enables dotenv configulations
+config();
 
 // Add your server routes and middleware here
 // For example:
@@ -22,3 +27,4 @@ app.all('/*', function(req, res, next) {
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
+
