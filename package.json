@@ -3,7 +3,7 @@
  "version": "1.0.0",
  "main": "index.js",
  "type": "module",
- "author": "Kyle Norman",
+ "author": "Victor Godwin",
  "license": "MIT",
  "engines": {
   "node": "16.17.0",
@@ -19,7 +19,7 @@
  },
  "scripts": {
   "start": "nodemon server.js",
-  "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+  "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0"
  },
  "dependencies": {
   "@material-ui/core": "^4.12.4",
