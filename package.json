@@ -5,6 +5,10 @@
  "type": "module",
  "author": "Kyle Norman",
  "license": "MIT",
+ "engines": {
+  "node": "16.17.0",
+  "npm": "9.6.7"
+ },
  "devDependencies": {
   "@babel/core": "^7.23.0",
   "@babel/preset-env": "^7.22.20",
