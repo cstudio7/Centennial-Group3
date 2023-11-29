@@ -2,7 +2,7 @@ const config = {
     env: process.env.NODE_ENV || 'development', 
     port: process.env.PORT || 3000,
     jwtSecret: process.env.JWT_SECRET || "YOUR_secret_key", 
-    mongoUri: process.env.MONGODB_URI ||"mongodb://localhost:27017/Group3"||
+    mongoUri: process.env.MONGODB_URI ||"mongodb+srv://kylenormangs3:szGfVD0c3kQQLLdb@comp229groupprojectclus.iisvdbk.mongodb.net/"||
     process.env.MONGO_HOST ||
     'mongodb://' + (process.env.IP || '0.0.0.0/0 ') + ':' + 
    (process.env.MONGO_PORT || '27017') +
